@@ -5,8 +5,8 @@ int main(void) {
     int a[N] = {38, 72, 53, 46, 24, 65};
     int i, j, w, ii, ctl, ct2;
 
-    ctl = 0; // comparison count
-    ct2 = 0; // swap count
+    ctl = 0;
+    ct2 = 0;
 
     for (i = 0; i < N; i++) {
         printf("%4d", a[i]);
@@ -22,9 +22,9 @@ int main(void) {
             a[j] = a[j - 1];
             j--;
         }
-        ctl++; // for the last comparison when while loop fails
+        ctl++;
         a[j] = w;
-        ct2++; // counting the insertion
+        ct2++;
 
         for (ii = 0; ii < N; ii++) {
             printf("%4d", a[ii]);

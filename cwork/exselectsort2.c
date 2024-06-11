@@ -5,8 +5,8 @@ int main(void) {
     int a[N] = {53, 65, 46, 38, 72, 24};
     int i, j, w, ii, ctl, ct2, m;
 
-    ctl = 0; // comparison count
-    ct2 = 0; // swap count
+    ctl = 0;
+    ct2 = 0;
 
     for (i = 0; i < N; i++) {
         printf("%4d", a[i]);
